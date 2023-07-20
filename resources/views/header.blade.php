@@ -1,15 +1,16 @@
-<!DOCTYPE html>
+
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+
         <title>Laravel</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
 
         <!-- Styles -->
         <style>
@@ -22,24 +23,19 @@
             }
         </style>
     </head>
-    <body class="bg-dark text-light m-5 p-5 text-center">
+    <body >
+        <h1>header</h1>
         <div class="container">
-            <div class="row">
-                <div class="col">
-                     <div class="content">    
-                        <h1> Hello Laravel</h1>                      
-                        <h4>{{$dato}}</h4> 
-                       <img src=" {{ $image }} " alt="immagine-casuale" >                                                  
-                     </div>
-                     <a href="{{ url('/header') }}">Vai alla pagina About</a>
-                </div>
-            </div>
-       </div>
-       <div class="container">
+             <div class="row">
+                 <div class="col">
+                      <div class="content">                          
+                            {{ $content }}
+                            {{ $name }} 
+                            {{ $surname }}                                                      
+                      </div>
+                 </div>
+             </div>
+        </div>
 
-       </div>
-       
-      
-       
     </body>
 </html>
