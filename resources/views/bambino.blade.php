@@ -23,18 +23,39 @@
             }
         </style>
     </head>
-    <body >
-        <h1>header</h1>
+    <body class="">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" href="{{ url('/') }}">home</a> 
+                    <a class="nav-link active" href="{{ url('/donna') }}">Donna</a>                  
+                    <a class="nav-link active" href="{{ url('/uomo') }}">Uomo</a>
+                    <a class="nav-link active" href="{{ url('/bambino') }}">Bambino</a>
+                  </div>
+              </div>
+            </div>
+          </nav>        
+        <h3>Donna</h3>
         <div class="container">
-             <div class="row">
-                 <div class="col">
-                      <div class="content">                          
-                            {{ $content }}
-                            {{ $name }} 
-                            {{ $surname }}                                                      
-                      </div>
-                 </div>
-             </div>
+            <div class="row">
+                @foreach($products as $key => $product)
+                    <div class="col mb-2">
+                        <div class="card" style="width: 250px;">
+                            <img src="{{ $product['image'] }}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ $product['name'] }}</h5>
+                                <p class="card-text">{{ $product['content'] }}</p>
+                                <p class="card-text"><small class="text-muted">{{ $product['prezzo'] }}</small></p>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
         </div>
 
     </body>

@@ -18,13 +18,142 @@ Route::get('/', function () {
     $dato = 'secondo metodo';
     $image = 'https://picsum.photos/200/300';
     return view('home', compact('dato', 'image'));
+
 });
 
-Route::get('/header', function () {
-    $data = [
-        'content' => 'Benvenuto in Laravel',
-        'name' => 'Primi passi',
-        'surname' => 'lorem ipsum dolor sit amet consectetur omiesquat',
+Route::get('/donna', function () {
+    $products = [
+        [ 
+        'name' => 'nome prodotto',
+        'content' => 'Descrizione lorem ipsum dolor sit amet consectetur omiesquat',
+        'image' => 'https://picsum.photos/200/300',
+        'prezzo' => '35.00',],
+        [ 
+            'name' => 'nome prodotto',
+            'content' => 'Descrizione lorem ipsum dolor sit amet consectetur omiesquat',
+            'image' => 'https://picsum.photos/200/300',
+            'prezzo' => '35.00',],
+            [ 
+                'name' => 'nome prodotto',
+                'content' => 'Descrizione lorem ipsum dolor sit amet consectetur omiesquat',
+                'image' => 'https://picsum.photos/200/300',
+                'prezzo' => '35.00',],
+                [ 
+                    'name' => 'nome prodotto',
+                    'content' => 'Descrizione lorem ipsum dolor sit amet consectetur omiesquat',
+                    'image' => 'https://picsum.photos/200/300',
+                    'prezzo' => '35.00',],
+                    [ 
+                        'name' => 'nome prodotto',
+                        'content' => 'Descrizione lorem ipsum dolor sit amet consectetur omiesquat',
+                        'image' => 'https://picsum.photos/200/300',
+                        'prezzo' => '35.00',],
+                        [ 
+                            'name' => 'nome prodotto',
+                            'content' => 'Descrizione lorem ipsum dolor sit amet consectetur omiesquat',
+                            'image' => 'https://picsum.photos/200/300',
+                            'prezzo' => '35.00',],
+                            [ 
+                                'name' => 'nome prodotto',
+                                'content' => 'Descrizione lorem ipsum dolor sit amet consectetur omiesquat',
+                                'image' => 'https://picsum.photos/200/300',
+                                'prezzo' => '35.00',],
+                                [ 
+                                    'name' => 'nome prodotto',
+                                    'content' => 'Descrizione lorem ipsum dolor sit amet consectetur omiesquat',
+                                    'image' => 'https://picsum.photos/200/300',
+                                    'prezzo' => '35.00',],
     ];
-    return view('header', $data);
+    return view('donna', ['products' => $products]);
+});
+
+Route::get('/uomo', function () {
+    $products = [
+        [ 
+        'name' => 'nome prodotto',
+        'content' => 'Descrizione lorem ipsum dolor sit amet consectetur omiesquat',
+        'image' => 'https://picsum.photos/200/300',
+        'prezzo' => '35.00',],
+        [ 
+            'name' => 'nome prodotto',
+            'content' => 'Descrizione lorem ipsum dolor sit amet consectetur omiesquat',
+            'image' => 'https://picsum.photos/200/300',
+            'prezzo' => '35.00',],
+            [ 
+                'name' => 'nome prodotto',
+                'content' => 'Descrizione lorem ipsum dolor sit amet consectetur omiesquat',
+                'image' => 'https://picsum.photos/200/300',
+                'prezzo' => '35.00',],
+                [ 
+                    'name' => 'nome prodotto',
+                    'content' => 'Descrizione lorem ipsum dolor sit amet consectetur omiesquat',
+                    'image' => 'https://picsum.photos/200/300',
+                    'prezzo' => '35.00',],
+                    [ 
+                        'name' => 'nome prodotto',
+                        'content' => 'Descrizione lorem ipsum dolor sit amet consectetur omiesquat',
+                        'image' => 'https://picsum.photos/200/300',
+                        'prezzo' => '35.00',],
+                        [ 
+                            'name' => 'nome prodotto',
+                            'content' => 'Descrizione lorem ipsum dolor sit amet consectetur omiesquat',
+                            'image' => 'https://picsum.photos/200/300',
+                            'prezzo' => '35.00',],
+                            [ 
+                                'name' => 'nome prodotto',
+                                'content' => 'Descrizione lorem ipsum dolor sit amet consectetur omiesquat',
+                                'image' => 'https://picsum.photos/200/300',
+                                'prezzo' => '35.00',],
+                                [ 
+                                    'name' => 'nome prodotto',
+                                    'content' => 'Descrizione lorem ipsum dolor sit amet consectetur omiesquat',
+                                    'image' => 'https://picsum.photos/200/300',
+                                    'prezzo' => '35.00',],
+    ];
+    return view('uomo', ['products' => $products]);
+});
+Route::get('/bambino', function () {
+    $products = [
+        [ 
+        'name' => 'nome prodotto',
+        'content' => 'Descrizione lorem ipsum dolor sit amet consectetur omiesquat',
+        'image' => 'https://picsum.photos/200/300',
+        'prezzo' => '35.00',],
+        [ 
+            'name' => 'nome prodotto',
+            'content' => 'Descrizione lorem ipsum dolor sit amet consectetur omiesquat',
+            'image' => 'https://picsum.photos/200/300',
+            'prezzo' => '35.00',],
+            [ 
+                'name' => 'nome prodotto',
+                'content' => 'Descrizione lorem ipsum dolor sit amet consectetur omiesquat',
+                'image' => 'https://picsum.photos/200/300',
+                'prezzo' => '35.00',],
+                [ 
+                    'name' => 'nome prodotto',
+                    'content' => 'Descrizione lorem ipsum dolor sit amet consectetur omiesquat',
+                    'image' => 'https://picsum.photos/200/300',
+                    'prezzo' => '35.00',],
+                    [ 
+                        'name' => 'nome prodotto',
+                        'content' => 'Descrizione lorem ipsum dolor sit amet consectetur omiesquat',
+                        'image' => 'https://picsum.photos/200/300',
+                        'prezzo' => '35.00',],
+                        [ 
+                            'name' => 'nome prodotto',
+                            'content' => 'Descrizione lorem ipsum dolor sit amet consectetur omiesquat',
+                            'image' => 'https://picsum.photos/200/300',
+                            'prezzo' => '35.00',],
+                            [ 
+                                'name' => 'nome prodotto',
+                                'content' => 'Descrizione lorem ipsum dolor sit amet consectetur omiesquat',
+                                'image' => 'https://picsum.photos/200/300',
+                                'prezzo' => '35.00',],
+                                [ 
+                                    'name' => 'nome prodotto',
+                                    'content' => 'Descrizione lorem ipsum dolor sit amet consectetur omiesquat',
+                                    'image' => 'https://picsum.photos/200/300',
+                                    'prezzo' => '35.00',],
+    ];
+    return view('bambino', ['products' => $products]);
 });
